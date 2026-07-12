@@ -9,18 +9,36 @@ const { chars: chars2 } = text.split(".home__profession-2", {
 });
 
 animate(chars1, {
-  y: [{ to: ["100%", "0%"] }, { to: "-100%", delay: 4000, ease: "in(3)" }],
-  duration: 900,
+  y: [
+    {
+      to: ["100%", "0%"],
+    },
+    {
+      to: "-100%",
+      delay: 4500,
+      ease: "in(3)",
+    },
+  ],
+  duration: 1050,
   ease: "out(3)",
-  delay: stagger(80),
+  delay: stagger(90),
   loop: true,
 });
 
 animate(chars2, {
-  y: [{ to: ["100%", "0%"] }, { to: "-100%", delay: 4000, ease: "in(3)" }],
-  duration: 900,
+  y: [
+    {
+      to: ["100%", "0%"],
+    },
+    {
+      to: "-100%",
+      delay: 4500,
+      ease: "in(3)",
+    },
+  ],
+  duration: 1050,
   ease: "out(3)",
-  delay: stagger(80),
+  delay: stagger(90),
   loop: true,
 });
 

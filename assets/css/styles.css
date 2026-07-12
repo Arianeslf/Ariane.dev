@@ -693,6 +693,41 @@ img {
   align-items: stretch;
 }
 
+/* Links dos projetos desenvolvidos */
+.work__project-link {
+  width: fit-content;
+  margin-top: 1rem;
+  padding: 0.55rem 0.8rem;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  color: var(--first-color);
+  background-color: hsla(var(--hue), 60%, 64%, 0.08);
+
+  border: 1px solid hsla(var(--hue), 60%, 64%, 0.35);
+  border-radius: 0.5rem;
+
+  font-size: 0.78rem;
+  font-weight: var(--font-medium);
+
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.work__project-link:hover {
+  color: white;
+  background-color: var(--first-color);
+  transform: translateY(-2px);
+}
+
+.work__project-link i {
+  font-size: 1rem;
+}
+
 .services__card {
   position: relative;
   width: 100%;
@@ -815,7 +850,7 @@ img {
 
 .contact__description {
   font-family: var(--second-font);
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .contact__email {
@@ -982,7 +1017,6 @@ img {
 .footer__year {
   font-family: var(--second-font);
 }
-
 
 .footer .blob-animate {
   right: -3rem;
