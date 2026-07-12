@@ -202,10 +202,12 @@ a.forEach((item) => {
 /* Scroll Reveal Animation */
 const sr = ScrollReveal({
   origin: "top",
-  distance: "60px",
-  duration: 2000,
-  delay: 300,
-  reset: true, // Animation repeat
+  distance: "35px",
+  duration: 1300,
+  delay: 150,
+
+  /* A seção aparece e não some novamente */
+  reset: false,
 });
 
 //home, project and work section animations
