@@ -1,11 +1,7 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
-
-/*=============== VARIABLES CSS ===============*/
 
 :root {
   --header-height: 3.5rem;
-  /*========== Cores ==========*/
 
   --hue: 255;
   --first-color: hsl(var(--hue), 60%, 64%);
@@ -18,9 +14,6 @@
   --body-color: hsl(240, 100%, 2%);
   --container-color: hsl(240, 8%, 6%);
 
-  /*========== Fontes e tipografia ==========*/
-
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --second-font: "Unbounded", sans-serif;
   --biggest-font-size: 2rem;
@@ -32,19 +25,14 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /*========== Font weight ==========*/
-
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
-
-  /*========== z index ==========*/
 
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/*========== Tipografia Responsiva ==========*/
 @media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 3rem;
@@ -57,8 +45,6 @@
     --smaller-font-size: 0.813rem;
   }
 }
-
-/* -----------------Inicio da base-------------------*/
 
 * {
   box-sizing: border-box;
@@ -109,8 +95,6 @@ img {
   height: auto;
 }
 
-/*=============== CLASSES CSS REUTILIZÁVEIS ===============*/
-
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -139,8 +123,6 @@ img {
   overflow: hidden;
 }
 
-/* Blob */
-/* Blob animate */
 .blob-animate {
   width: 120px;
   height: 120px;
@@ -161,7 +143,6 @@ img {
   }
 }
 
-/* Blob */
 .blob {
   width: 250px;
   height: 250px;
@@ -172,7 +153,6 @@ img {
   z-index: -1;
 }
 
-/* Custom Cursor */
 .cursor {
   position: fixed;
   left: 0;
@@ -193,13 +173,11 @@ img {
     height 0.3s;
 }
 
-/* Hide the custom cursor */
 .hide-cursor {
   width: 0;
   height: 0;
 }
 
-/* Header Section And Nav */
 .header {
   width: 100%;
   position: fixed;
@@ -251,13 +229,11 @@ img {
   text-shadow: 0 8px 16px var(--first-color);
 }
 
-/* Active link */
 .active-link {
   color: var(--first-color);
   text-shadow: 0 8px 16px var(--first-color);
 }
 
-/* Home */
 .home {
   position: relative;
 }
@@ -298,7 +274,6 @@ img {
   justify-self: center;
 }
 
-.home_shadow,
 .home__info,
 .home__social,
 .home__cv {
@@ -385,15 +360,10 @@ img {
   transition: color 0.4s;
 }
 
-.homw__cv i {
-  font-size: 1rem;
-}
-
 .home__cv:hover {
   color: var(--first-color);
 }
 
-/* Buttons */
 .button {
   background-color: var(--body-color);
   border: 3px solid var(--first-color);
@@ -422,7 +392,6 @@ img {
     inset 8px -8px 30px var(--first-color-alt-2);
 }
 
-/* About Section */
 .about {
   position: relative;
   padding-top: 3rem !important;
@@ -477,7 +446,6 @@ img {
   background: linear-gradient(180deg, hsla(240, 100%, 2%, 0) 60%, var(--body-color) 95%);
 }
 
-/* Projects Section */
 .projects .section__title {
   text-align: initial;
   margin-left: 1.5rem;
@@ -571,7 +539,6 @@ img {
   pointer-events: initial;
 }
 
-/* Swiper class */
 .projects__swiper {
   margin-inline: initial;
   padding: 2rem;
@@ -586,7 +553,6 @@ img {
   transition: opacity 0.4s;
 }
 
-/* Work */
 .work__tabs {
   background-color: var(--container-color);
   padding: 1.25rem 2rem;
@@ -672,7 +638,6 @@ img {
   left: -6px;
 }
 
-/* Show & hide sections */
 .work__area [data-content] {
   display: none;
 }
@@ -681,19 +646,16 @@ img {
   display: grid;
 }
 
-/* Active tab */
 .work__button.work-active {
   color: var(--first-color);
 }
 
-/* Services */
 .services__container {
   width: 100%;
   gap: 1.5rem;
   align-items: stretch;
 }
 
-/* Links dos projetos desenvolvidos */
 .work__project-link {
   width: fit-content;
   margin-top: 1rem;
@@ -817,14 +779,12 @@ img {
   transition: rotate 0.4s;
 }
 
-/* Hide services info */
 .services__close .services__info {
   height: 0;
   opacity: 0;
   overflow: hidden;
 }
 
-/* Rotate icon */
 .services__open .services__button i {
   rotate: -180deg;
 }
@@ -835,7 +795,6 @@ img {
     opacity 0.4s ease;
 }
 
-/* Contact */
 .contact__container {
   row-gap: 3rem;
   padding-bottom: 2rem;
@@ -857,11 +816,6 @@ img {
   display: none;
 }
 
-.contact__button {
-  cursor: pointer;
-}
-
-/* Formulário de contato */
 .contact__form {
   width: min(90%, 520px) !important;
   margin: 1.5rem auto 0 !important;
@@ -940,7 +894,6 @@ img {
   box-shadow: 0 8px 24px hsla(255, 60%, 45%, 0.22) !important;
 }
 
-/* Computadores */
 @media screen and (min-width: 768px) {
   .contact__form {
     width: 500px !important;
@@ -997,7 +950,6 @@ img {
   color: var(--text-color);
 }
 
-/* Footer */
 .footer {
   position: relative;
   padding-block: 4rem 2rem;
@@ -1022,7 +974,7 @@ img {
   right: -3rem;
   bottom: -3rem;
 }
-/* Scroll Bar */
+
 ::-webkit-scrollbar {
   width: 0.6rem;
   background-color: hsl(240, 6%, 12%);
@@ -1038,8 +990,6 @@ img {
   background-color: hsl(240, 6%, 24%);
 }
 
-/*=============== BREAKPOINTS ===============*/
-/* For small devices */
 @media screen and (max-width: 320px) {
   .container {
     margin-inline: 1rem;
@@ -1058,14 +1008,8 @@ img {
   .work__tabs {
     padding-inline: 1rem;
   }
-
-  .testimonials__card {
-    width: 250px;
-    padding-bottom: 2rem;
-  }
 }
 
-/* For medium devices */
 @media screen and (min-width: 540px) {
   .home__container {
     width: 460px;
@@ -1084,7 +1028,7 @@ img {
     text-align: center;
   }
 
-  :is(.projects, .testimonials) .section__title {
+  .projects .section__title {
     text-align: center;
     margin-left: 0;
   }
@@ -1130,7 +1074,6 @@ img {
   }
 }
 
-/* For large devices */
 @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
@@ -1367,40 +1310,6 @@ img {
     bottom: 2rem;
   }
 
-  .testimonials__container {
-    row-gap: 3rem;
-  }
-
-  .testimonials__container::after,
-  .testimonials__container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 20%;
-    height: 100%;
-  }
-
-  .testimonials__container::after {
-    left: 0;
-    background: linear-gradient(90deg, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0) 100%);
-  }
-
-  .testimonials__container::before {
-    right: 0;
-    z-index: 1;
-    background: linear-gradient(90deg, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) 100%);
-  }
-
-  .testimonials__card {
-    width: 370px;
-    padding: 3rem 2rem;
-    border-radius: 4rem;
-  }
-
-  .testimonials__number {
-    font-size: var(--normal-font-size);
-  }
-
   .contact {
     padding-block: 9rem 4rem;
   }
@@ -1439,30 +1348,22 @@ img {
   }
 }
 
-/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
 @media screen and (min-width: 2048px) {
   body {
     zoom: 1.4;
   }
 }
 
-/* Custom cursor is hidden for mobile devices */
 @media (pointer: coarse) {
   .cursor {
     display: none;
   }
 }
 
-/* Arumei o css */
-
-/*=============== AJUSTES DA SEÇÃO MINHA TRAJETÓRIA ===============*/
-
-/* Espaço entre as abas e os conteúdos */
 .work__container {
   row-gap: 3rem;
 }
 
-/* Abas Educação e Projetos desenvolvidos */
 .work__tabs {
   width: fit-content;
   max-width: 100%;
@@ -1472,7 +1373,6 @@ img {
   padding: 1rem 1.5rem;
 }
 
-/* Texto dos botões */
 .work__button {
   justify-content: center;
   gap: 0.4rem;
@@ -1480,28 +1380,23 @@ img {
   white-space: nowrap;
 }
 
-/* Ícones dos botões */
 .work__button i {
   font-size: 1.1rem;
 }
 
-/* Espaçamento entre os cards */
 .work__content {
   row-gap: 3.5rem;
 }
 
-/* Organização de cada card */
 .work__card {
   align-items: start;
 }
 
-/* Área com título, instituição e ano */
 .work__data {
   align-items: flex-start;
   gap: 1.5rem;
 }
 
-/* Títulos dos cursos e projetos */
 .work__title {
   max-width: 100%;
   margin-bottom: 0.5rem;
@@ -1509,14 +1404,12 @@ img {
   line-height: 1.35;
 }
 
-/* Nome da instituição ou matéria */
 .work__subtitle {
   max-width: 100%;
   font-size: 0.9rem;
   line-height: 1.5;
 }
 
-/* Ano ou período */
 .work__year {
   flex-shrink: 0;
   font-size: 0.85rem;
@@ -1526,14 +1419,12 @@ img {
   color: var(--first-color-light);
 }
 
-/* Descrição dos cursos e projetos */
 .work__description {
   max-width: 100%;
   font-size: 0.95rem;
   line-height: 1.7;
 }
 
-/*=============== CELULARES ===============*/
 @media screen and (max-width: 539px) {
   .work__tabs {
     width: 100%;
@@ -1580,7 +1471,6 @@ img {
   }
 }
 
-/*=============== TABLETS ===============*/
 @media screen and (min-width: 540px) and (max-width: 767px) {
   .work__tabs {
     width: fit-content;
@@ -1595,7 +1485,6 @@ img {
   }
 }
 
-/*=============== COMPUTADORES ===============*/
 @media screen and (min-width: 768px) {
   .work__card {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -1619,7 +1508,6 @@ img {
   }
 }
 
-/*=============== TELAS GRANDES ===============*/
 @media screen and (min-width: 1150px) {
   .work__card {
     grid-template-columns: minmax(0, 430px) minmax(0, 430px);
