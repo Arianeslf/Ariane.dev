@@ -111,7 +111,6 @@ img {
 
 /*=============== CLASSES CSS REUTILIZÁVEIS ===============*/
 
-
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -145,11 +144,7 @@ img {
 .blob-animate {
   width: 100px;
   height: 100px;
-  background: linear-gradient(
-    180deg,
-    var(--first-color-alt) 20%,
-    var(--first-color-light) 100%
-  );
+  background: linear-gradient(180deg, var(--first-color-alt) 20%, var(--first-color-light) 100%);
   border-radius: 50%;
   position: absolute;
   filter: blur(35px);
@@ -170,11 +165,7 @@ img {
 .blob {
   width: 250px;
   height: 250px;
-  background: linear-gradient(
-    180deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(180deg, var(--first-color) 0%, var(--first-color-alt) 100%);
   border-radius: 50%;
   filter: blur(50px);
   position: absolute;
@@ -214,11 +205,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(
-    180deg,
-    var(--body-color) 60%,
-    hsla(240, 100%, 2%, 0) 100%
-  );
+  background: linear-gradient(180deg, var(--body-color) 60%, hsla(240, 100%, 2%, 0) 100%);
   z-index: var(--z-fixed);
 }
 
@@ -320,11 +307,7 @@ img {
   width: 100%;
   bottom: 1rem;
   z-index: 1;
-  background: linear-gradient(
-    180deg,
-    hsla(240, 100%, 2%, 0) 60%,
-    hsl(240, 100%, 2%) 85%
-  );
+  background: linear-gradient(180deg, hsla(240, 100%, 2%, 0) 60%, hsl(240, 100%, 2%) 85%);
 }
 
 .home__info {
@@ -487,11 +470,7 @@ img {
   position: absolute;
   bottom: 1rem;
   z-index: 1;
-  background: linear-gradient(
-    180deg,
-    hsla(240, 100%, 2%, 0) 60%,
-    var(--body-color) 95%
-  );
+  background: linear-gradient(180deg, hsla(240, 100%, 2%, 0) 60%, var(--body-color) 95%);
 }
 
 /* Projects Section */
@@ -670,11 +649,7 @@ img {
 .work__line {
   width: 4px;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(var(--hue), 60%, 64%, 0),
-    var(--first-color-alt-2)
-  );
+  background: linear-gradient(180deg, hsla(var(--hue), 60%, 64%, 0), var(--first-color-alt-2));
   position: absolute;
   left: -0.25rem;
 }
@@ -1172,11 +1147,7 @@ img {
     left: 0;
     right: 0;
     margin-inline: auto;
-    background: linear-gradient(
-      180deg,
-      hsla(240, 100%, 2%, 0) 60%,
-      hsl(240, 100%, 2%) 95%
-    );
+    background: linear-gradient(180deg, hsla(240, 100%, 2%, 0) 60%, hsl(240, 100%, 2%) 95%);
   }
 
   .home__data {
@@ -1318,7 +1289,7 @@ img {
   }
 
   .work__subtitle,
-  .work__desciption {
+  .work__description {
     font-size: var(--h3-font-size);
   }
 
@@ -1358,21 +1329,13 @@ img {
 
   .testimonials__container::after {
     left: 0;
-    background: linear-gradient(
-      90deg,
-      hsl(0, 0%, 0%) 0%,
-      hsla(0, 0%, 0%, 0) 100%
-    );
+    background: linear-gradient(90deg, hsl(0, 0%, 0%) 0%, hsla(0, 0%, 0%, 0) 100%);
   }
 
   .testimonials__container::before {
     right: 0;
     z-index: 1;
-    background: linear-gradient(
-      90deg,
-      hsla(0, 0%, 0%, 0) 0%,
-      hsl(0, 0%, 0%) 100%
-    );
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 0) 0%, hsl(0, 0%, 0%) 100%);
   }
 
   .testimonials__card {
@@ -1434,5 +1397,195 @@ img {
 @media (pointer: coarse) {
   .cursor {
     display: none;
+  }
+}
+
+/* Arumei o css */
+
+/*=============== AJUSTES DA SEÇÃO MINHA TRAJETÓRIA ===============*/
+
+/* Espaço entre as abas e os conteúdos */
+.work__container {
+  row-gap: 3rem;
+}
+
+/* Abas Educação e Projetos desenvolvidos */
+.work__tabs {
+  width: fit-content;
+  max-width: 100%;
+  justify-self: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 1.5rem;
+}
+
+/* Texto dos botões */
+.work__button {
+  justify-content: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* Ícones dos botões */
+.work__button i {
+  font-size: 1.1rem;
+}
+
+/* Espaçamento entre os cards */
+.work__content {
+  row-gap: 3.5rem;
+}
+
+/* Organização de cada card */
+.work__card {
+  align-items: start;
+}
+
+/* Área com título, instituição e ano */
+.work__data {
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Títulos dos cursos e projetos */
+.work__title {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+/* Nome da instituição ou matéria */
+.work__subtitle {
+  max-width: 100%;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Ano ou período */
+.work__year {
+  flex-shrink: 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: right;
+  white-space: nowrap;
+}
+
+/* Descrição dos cursos e projetos */
+.work__description {
+  max-width: 100%;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/*=============== CELULARES ===============*/
+@media screen and (max-width: 539px) {
+  .work__tabs {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.75rem;
+    border-radius: 1.5rem;
+    padding: 1rem;
+  }
+
+  .work__button {
+    width: 100%;
+    padding: 0.65rem;
+  }
+
+  .work__area {
+    padding-left: 1.25rem;
+  }
+
+  .work__content {
+    row-gap: 3rem;
+  }
+
+  .work__data {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .work__title {
+    font-size: 1.05rem;
+  }
+
+  .work__subtitle {
+    font-size: 0.85rem;
+  }
+
+  .work__year {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+
+  .work__description {
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+}
+
+/*=============== TABLETS ===============*/
+@media screen and (min-width: 540px) and (max-width: 767px) {
+  .work__tabs {
+    width: fit-content;
+  }
+
+  .work__title {
+    font-size: 1.15rem;
+  }
+
+  .work__year {
+    font-size: 0.95rem;
+  }
+}
+
+/*=============== COMPUTADORES ===============*/
+@media screen and (min-width: 768px) {
+  .work__card {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: 4rem;
+  }
+
+  .work__title {
+    font-size: 1.15rem;
+  }
+
+  .work__subtitle {
+    font-size: 0.95rem;
+  }
+
+  .work__year {
+    font-size: 1.05rem;
+  }
+
+  .work__description {
+    font-size: 0.95rem;
+  }
+}
+
+/*=============== TELAS GRANDES ===============*/
+@media screen and (min-width: 1150px) {
+  .work__card {
+    grid-template-columns: minmax(0, 430px) minmax(0, 430px);
+    column-gap: 8rem;
+  }
+
+  .work__title {
+    font-size: 1.25rem;
+  }
+
+  .work__subtitle {
+    font-size: 1rem;
+  }
+
+  .work__year {
+    font-size: 1.15rem;
+  }
+
+  .work__description {
+    font-size: 1rem;
+    line-height: 1.75;
   }
 }
