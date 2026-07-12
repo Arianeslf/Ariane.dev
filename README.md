@@ -4,7 +4,7 @@ Portfólio desenvolvido para apresentar minha trajetória, formação, habilidad
 
 ## Sobre o projeto
 
-O site reúne informações sobre minha formação em Engenharia de Software, cursos realizados e projetos desenvolvidos na faculdade e no Instituto PROA.
+O site reúne informações sobre minha formação, cursos realizados e projetos desenvolvidos.
 
 Também possui uma seção de contato para oportunidades, projetos e conexões profissionais.
 
