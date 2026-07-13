@@ -795,6 +795,161 @@ img {
     opacity 0.4s ease;
 }
 
+/*=============== ESFERA DE TECNOLOGIAS ===============*/
+
+.tecnologias {
+  min-height: 800px;
+  padding: 6rem 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.tecnologias h2 {
+  margin-bottom: 0.7rem;
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+.tecnologias > p {
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.esfera-tecnologias {
+  margin-top: 5rem;
+  position: relative;
+  width: 650px;
+  height: 600px;
+  margin-inline: auto;
+  overflow: visible;
+  border-radius: 50%;
+  cursor: grab;
+  perspective: 1000px;
+  user-select: none;
+  touch-action: none;
+  background: radial-gradient(circle, rgba(126, 87, 194, 0.12), transparent 65%);
+}
+
+.esfera-tecnologias:active {
+  cursor: grabbing;
+}
+
+/* Pontinhos parecidos com estrelas */
+
+.esfera-tecnologias::before {
+  position: absolute;
+  inset: 5%;
+  content: "";
+  border-radius: 50%;
+  opacity: 0.25;
+  pointer-events: none;
+
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.7) 1px, transparent 1px);
+
+  background-size: 27px 27px;
+}
+
+.tecnologia {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 75px;
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  border-radius: 50%;
+
+  will-change: transform, opacity, filter;
+  transform-style: preserve-3d;
+}
+
+.tecnologia iconify-icon {
+  font-size: 54px;
+  filter: grayscale(1) brightness(1.7);
+  transition:
+    filter 0.3s,
+    transform 0.3s;
+
+}
+
+/* Nome da tecnologia */
+
+.tecnologia::after {
+  position: absolute;
+  top: 78px;
+  left: 50%;
+
+  padding: 0.3rem 0.6rem;
+  content: attr(data-name);
+
+  font-size: 0.7rem;
+  color: white;
+  white-space: nowrap;
+
+  background: #100a19;
+  border: 1px solid var(--first-color);
+  border-radius: 0.5rem;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: opacity 0.3s;
+}
+
+.tecnologia:hover {
+  z-index: 999 !important;
+}
+
+.tecnologia:hover iconify-icon {
+  filter: grayscale(0) brightness(1) drop-shadow(0 0 12px var(--first-color));
+
+  transform: scale(1.3);
+}
+
+.tecnologia:hover::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .tecnologias {
+    min-height: 570px;
+  }
+
+  .tecnologias h2 {
+    font-size: 1.8rem;
+  }
+
+  .esfera-tecnologias {
+    width: 360px;
+    height: 400px;
+  }
+
+  .tecnologia {
+    width: 45px;
+    height: 45px;
+  }
+
+  .tecnologia iconify-icon {
+    font-size: 33px;
+  }
+
+  .tecnologia::after {
+    top: 48px;
+    font-size: 0.55rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .esfera-tecnologias {
+    width: 310px;
+  }
+}
+
 .contact__container {
   row-gap: 3rem;
   padding-bottom: 2rem;
