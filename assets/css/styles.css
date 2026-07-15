@@ -282,9 +282,9 @@ img {
 
 .home__shadow {
   width: 100%;
-  bottom: 1rem;
+  bottom: 2rem;
   z-index: 1;
-  background: linear-gradient(180deg, hsla(240, 100%, 2%, 0) 60%, hsl(240, 100%, 2%) 85%);
+  background: linear-gradient(180deg, hsla(0, 0%, 0%, 0) 60%, hsl(240, 100%, 2%) 85%);
 }
 
 .home__info {
@@ -874,7 +874,6 @@ img {
   transition:
     filter 0.3s,
     transform 0.3s;
-
 }
 
 /* Nome da tecnologia */
@@ -1274,7 +1273,7 @@ img {
   }
 
   .home__profile {
-    width: 600px;
+    width: 430px;
   }
 
   .home__image .blob-animate {
@@ -1361,7 +1360,7 @@ img {
   }
 
   .about__profile {
-    width: 500px;
+    width: 440px;
   }
 
   .about__image {
