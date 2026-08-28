@@ -102,7 +102,7 @@ img {
 
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 4.5rem;
 }
 
 .section {
@@ -1477,7 +1477,8 @@ img {
   }
 
   .contact__content {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
   }
 
   .contact__info {
